@@ -1,6 +1,28 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 body {
   background-color: #000;
   color: #fff;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex justify-center items-center;
+    @apply px-4 py-2 rounded-lg;
+  }
+
+  .btn-primary {
+    @apply bg-purple-500 text-white;
+    @apply hover:bg-purple-600;
+  }
+
+  .btn-secondary {
+    @apply bg-zinc-500 text-white;
+    @apply hover:bg-zinc-600;
+  }
+
+  .btn-danger {
+    @apply bg-red-500 text-white;
+    @apply hover:bg-red-600;
+  }
 }
